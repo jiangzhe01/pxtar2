@@ -1,14 +1,15 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue              from 'vue'
+import Router           from 'vue-router'
 
-import index            from  '@/components/index'
-import about            from  '@/components/about'
-import dynamicCartoon   from  '@/components/dynamicCartoon'
-import animateCartoon   from  '@/components/animateCartoon'
-import authorDetail     from  '@/components/authorDetail'
-import search           from  '@/components/search'
-import cartoonDetail    from  '@/components/cartoonDetail'
-import cartoon          from  '@/components/cartoon'
+import index            from '@/components/index'
+import about            from '@/components/about'
+import dynamicCartoon   from '@/components/dynamicCartoon'
+import animateCartoon   from '@/components/animateCartoon'
+import authorDetail     from '@/components/authorDetail'
+import search           from '@/components/search'
+import cartoonDetail    from '@/components/cartoonDetail'
+import cartoon          from '@/components/cartoon'
+import error            from '@/components/error'
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ var router = new Router({
       path: '/about',
       component: about,
       meta: {title: '关于我们'}
+    },
+    {
+      path: '*',
+      component: error,
+      meta: {title: '错误'}
     }
   ]
 })

@@ -1,8 +1,11 @@
 <!--  -->
 <template>
-    <div class='main'>
-        
-    </div>
+  <div class='main'>
+    <div class="banner"></div>
+    <div class="recommend"></div>
+    <div class="updateTable"></div>
+    <div class="floatNav"></div>
+  </div>
 </template>
 
 <script>
@@ -43,7 +46,20 @@ export default {
   activated () {} // 如果页面有keep-alive缓存功能，这个函数会触发
 }
 </script>
-<style lang='scss' scoped>
+<style lang='less' scoped>
 //@import url(); 引入公共css类
+  .main {
+    .banner {
 
+    }
+    .recommend {
+
+    }
+    .updateTable {
+
+    }
+    .floatNav {
+
+    }
+  }
 </style>

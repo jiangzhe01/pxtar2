@@ -1,10 +1,8 @@
 <!--  -->
 <template>
-  <div class='main'>
-    <div class="productIntroduce"></div>
-    <div class="productChapter"></div>
-    <div class="productRecommend"></div>
-  </div>
+    <div class='main'>
+        您所访问的内容出错,将在{{second}}后返回首页
+    </div>
 </template>
 
 <script>
@@ -17,7 +15,7 @@ export default {
   data () {
     // 这里存放数据
     return {
-
+      second: 6
     }
   },
   // 监听属性 类似于data概念
@@ -26,11 +24,19 @@ export default {
   watch: {},
   // 方法集合
   methods: {
-
+    message () {
+      this.minute -= 1
+      this.timer = setTimeout(this.message, 1000)
+      if (this.minute <= 0) {
+        this.minute = 0
+        clearTimeout(this.timer)
+        window.location.href = '/'
+      }
+    }
   },
   // 生命周期 - 创建完成（可以访问当前this实例）
   created () {
-
+    this.message()
   },
   // 生命周期 - 挂载完成（可以访问DOM元素）
   mounted () {

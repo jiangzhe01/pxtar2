@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-<div class=''></div>
+  <div class='main'></div>
 </template>
 
 <script>
@@ -41,7 +41,11 @@ export default {
   activated () {} // 如果页面有keep-alive缓存功能，这个函数会触发
 }
 </script>
-<style lang='scss' scoped>
+<style lang='less' scoped>
 //@import url(); 引入公共css类
-
+  .main {
+    height: 62px;
+    background: #ddd;
+    width: 100%;
+  }
 </style>

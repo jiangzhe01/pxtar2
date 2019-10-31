@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <pxtar-header></pxtar-header>
     <router-view/>
+    <pxtar-footer></pxtar-footer>
   </div>
 </template>
 
