@@ -2,7 +2,9 @@
 <template>
   <div class="main">
     <div class="authorIntroduce"></div>
-    <div class="authorExperience"></div>
+    <div class="authorExperience">
+      <div class="authorExperience_box"></div>
+    </div>
   </div>
 </template>
 
@@ -46,5 +48,24 @@ export default {
 </script>
 <style lang='less' scoped>
 //@import url(); 引入公共css类
-
+  .main {
+    width: 1200px;
+    margin: 0 auto;
+    .authorIntroduce {
+      height: 331px;
+      width: 100%;
+      background: rgb(170, 170, 170);
+    }
+    .authorExperience {
+      height: 882px;
+      width: 100%;
+      background: pink;
+      padding: 40px 0px 102px;
+      .authorExperience_box {
+        width: 100%;
+        height: 100%;
+        background: yellow;
+      }
+    }
+  }
 </style>

@@ -2,8 +2,18 @@
 <template>
   <div class='main'>
     <div class="banner"></div>
-    <div class="recommend"></div>
-    <div class="updateTable"></div>
+    <div class="recommend">
+      <div class="recommend_box">
+        <div class="recommend_title"></div>
+        <div class="recommend_content"></div>
+      </div>
+    </div>
+    <div class="updateTable">
+      <div class="updateTable_box">
+        <div class="updateTable_title"></div>
+        <div class="updateTable_content"></div>
+      </div>
+    </div>
     <div class="floatNav"></div>
   </div>
 </template>
@@ -49,14 +59,54 @@ export default {
 <style lang='less' scoped>
 //@import url(); 引入公共css类
   .main {
+    width: 1200px;
+    margin: 0 auto;
     .banner {
-
+      width: 100%;
+      height: 480px;
+      background: rgb(204, 204, 204);
     }
     .recommend {
-
+      height: 1020px;
+      width: 100%;
+      background: rgb(170, 170, 170);
+      padding: 65px 60px 100px;
+      .recommend_box {
+        width: 100%;
+        height: 100%;
+        background: goldenrod;
+        .recommend_title {
+          height: 55px;
+          width: 100%;
+          background: red;
+        }
+        .recommend_content {
+          height: 100%;
+          width: 100%;
+          background: green;
+        }
+      }
     }
     .updateTable {
-
+      height: 992px;
+      width: 100%;
+      background: rgb(170, 170, 170);
+      padding: 0px 24px 76px 55px;
+      .updateTable_box {
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        .updateTable_title {
+          height: 55px;
+          width: 100%;
+          background: red;
+        }
+        .updateTable_content {
+          width: 100%;
+          height: 100%;
+          background: green;
+        }
+      }
     }
     .floatNav {
 

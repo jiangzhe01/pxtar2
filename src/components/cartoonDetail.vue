@@ -1,9 +1,21 @@
 <!--  -->
 <template>
   <div class='main'>
-    <div class="productIntroduce"></div>
-    <div class="productChapter"></div>
-    <div class="productRecommend"></div>
+    <div class="productIntroduce">
+      <div class="productIntroduce_box"></div>
+    </div>
+    <div class="productChapter">
+      <div class="productChapter_box">
+        <div class="productChapter_title"></div>
+        <div class="productChapter_content"></div>
+      </div>
+    </div>
+    <div class="productRecommend">
+      <div class="productRecommend_box">
+        <div class="productRecommend_title"></div>
+        <div class="productRecommend_content"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -47,5 +59,64 @@ export default {
 </script>
 <style lang='less' scoped>
 //@import url(); 引入公共css类
-
+  .main {
+    width: 1200px;
+    margin: 0 auto;
+    .productIntroduce {
+      width: 100%;
+      height: 446px;
+      // background: rbg(170, 170, 170);
+      background: yellow;
+      padding: 46px 100px 0px 42px;
+      .productIntroduce_box {
+        width: 100%;
+        height: 100%;
+        background: pink;
+      }
+    }
+    .productChapter {
+      width: 100%;
+      height: 730px;
+      background: pink;
+      padding: 48px 50px 110px;
+      .productChapter_box {
+        width: 100%;
+        height: 100%;
+        background: green;
+        overflow: hidden;
+        .productChapter_title {
+          height: 46px;
+          width: 100%;
+          background: red;
+        }
+        .productChapter_content {
+          height: 100%;
+          width: 100%;
+          background: yellow;
+        }
+      }
+    }
+    .productRecommend {
+      height: 358px;
+      width: 100%;
+      background: goldenrod;
+      padding: 0px 30px 48px;
+      .productRecommend_box {
+        background: 100%;
+        height: 100%;
+        background: yellow;
+        overflow: hidden;
+        .productRecommend_title {
+          height: 46px;
+          width: 100%;
+          background: red;
+        }
+        .productRecommend_content {
+          height: 100%;
+          width: 100%;
+          background: pink;
+        }
+      }
+    }
+  }
 </style>

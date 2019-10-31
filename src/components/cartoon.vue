@@ -2,7 +2,12 @@
 <template>
   <div class='main'>
     <div class="banner"></div>
-    <dvi class="cartoonUpdate"></dvi>
+    <div class="cartoonUpdate">
+      <div class="cartoonUpdate_box">
+        <div class="cartoonUpdate_title"></div>
+        <div class="cartoonUpadte_content"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -46,5 +51,35 @@ export default {
 </script>
 <style lang='less' scoped>
 //@import url(); 引入公共css类
-
+  .main {
+    width: 1200px;
+    margin: 0 auto;
+    .banner {
+      width: 100%;
+      height: 480px;
+      background: rgb(204, 204, 204);
+    }
+    .cartoonUpdate {
+      width: 100%;
+      height: 1100px;
+      background: rgb(170, 170, 170);
+      padding: 100px 0px 100px;
+      .cartoonUpdate_box {
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        overflow: hidden;
+        .cartoonUpdate_title {
+          height: 90px;
+          width: 100%;
+          background: red;
+        }
+        .cartoonUpadte_content {
+          width: 100%;
+          height: 100%;
+          background: green;
+        }
+      }
+    }
+  }
 </style>
