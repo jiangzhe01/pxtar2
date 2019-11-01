@@ -4,8 +4,16 @@
     <div class="banner"></div>
     <div class="cartoonUpdate">
       <div class="cartoonUpdate_box">
-        <div class="cartoonUpdate_title"></div>
-        <div class="cartoonUpadte_content"></div>
+        <div class="cartoonUpdate_title">
+          <div v-for="(item, i) in date_list" :key="i">
+            {{item}}
+          </div>
+        </div>
+        <div class="cartoonUpadte_content">
+          <div class="conent-box">
+            
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -21,7 +29,7 @@ export default {
   data () {
     // 这里存放数据
     return {
-
+      date_list: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     }
   },
   // 监听属性 类似于data概念

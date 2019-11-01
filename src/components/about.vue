@@ -1,6 +1,8 @@
 <!--  -->
 <template>
-<div class=''></div>
+  <div class='main'>
+    <h3 style="margin: 0 auto;">This page is about our company</h3>
+  </div>
 </template>
 
 <script>

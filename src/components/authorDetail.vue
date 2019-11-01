@@ -3,7 +3,12 @@
   <div class="main">
     <div class="authorIntroduce"></div>
     <div class="authorExperience">
-      <div class="authorExperience_box"></div>
+      <div class="authorExperience_box">
+        <div class="authorExperience_title">
+          <span>经历 代表作</span>
+        </div>
+        <div class="authorExperience_content"></div>
+      </div>
     </div>
   </div>
 </template>

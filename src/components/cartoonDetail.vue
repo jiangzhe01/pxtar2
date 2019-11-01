@@ -2,18 +2,27 @@
 <template>
   <div class='main'>
     <div class="productIntroduce">
-      <div class="productIntroduce_box"></div>
+      <div class="productIntroduce_box">
+        <div class="future_img">
+          <img src="" alt="">
+        </div>
+        <div class="future_introduce">
+
+        </div>
+      </div>
     </div>
     <div class="productChapter">
       <div class="productChapter_box">
-        <div class="productChapter_title"></div>
+        <div class="productChapter_title">章节列表</div>
         <div class="productChapter_content"></div>
       </div>
     </div>
     <div class="productRecommend">
       <div class="productRecommend_box">
-        <div class="productRecommend_title"></div>
-        <div class="productRecommend_content"></div>
+        <div class="productRecommend_title">相关推荐</div>
+        <div class="productRecommend_content">
+          <div class="recommend" v-for="i in 5" :key="i"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -62,6 +71,8 @@ export default {
   .main {
     width: 1200px;
     margin: 0 auto;
+
+    // 作品介绍
     .productIntroduce {
       width: 100%;
       height: 446px;
@@ -72,8 +83,19 @@ export default {
         width: 100%;
         height: 100%;
         background: pink;
+        .future_img {
+          img {
+            width: 320px;
+            height: 126px;
+          }
+        }
+        .future_introduce {
+
+        }
       }
     }
+
+    // 章节列表
     .productChapter {
       width: 100%;
       height: 730px;
@@ -96,6 +118,8 @@ export default {
         }
       }
     }
+
+    // 相关推荐
     .productRecommend {
       height: 358px;
       width: 100%;
@@ -115,6 +139,10 @@ export default {
           height: 100%;
           width: 100%;
           background: pink;
+          .recommend {
+            width: 188px;
+            height: 251px;
+          }
         }
       }
     }

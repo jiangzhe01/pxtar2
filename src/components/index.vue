@@ -4,13 +4,22 @@
     <div class="banner"></div>
     <div class="recommend">
       <div class="recommend_box">
-        <div class="recommend_title"></div>
-        <div class="recommend_content"></div>
+        <div class="recommend_title">
+          <span>强档推荐</span>
+          <span class="line"></span>
+        </div>        
+        <div class="recommend_content">
+          <div class="content-box"></div>
+          <div class="content-box"></div>
+        </div>
       </div>
     </div>
     <div class="updateTable">
       <div class="updateTable_box">
-        <div class="updateTable_title"></div>
+        <div class="updateTable_title">
+          <span>更新时间表</span>
+          <span class="line"></span>  
+        </div>
         <div class="updateTable_content"></div>
       </div>
     </div>
@@ -61,11 +70,15 @@ export default {
   .main {
     width: 1200px;
     margin: 0 auto;
+
+    //banner栏
     .banner {
       width: 100%;
       height: 480px;
       background: rgb(204, 204, 204);
     }
+
+    // 强档推荐 
     .recommend {
       height: 1020px;
       width: 100%;
@@ -84,9 +97,18 @@ export default {
           height: 100%;
           width: 100%;
           background: green;
+          .content-box {
+            display: flex;
+            .box {
+              flex: 1;
+              height: 360;
+            }
+          }
         }
       }
     }
+
+    // 更新时间表
     .updateTable {
       height: 992px;
       width: 100%;
